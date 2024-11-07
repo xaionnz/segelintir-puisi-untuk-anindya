@@ -1,0 +1,501 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Kumpulan puisi cinta untuk Anindya, mengekspresikan keindahan dan kedalaman perasaan.">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <title>Segelintir Puisi tentang Anindya</title>
+    <style>
+        /* Global Styles */
+        body {
+            font-family: 'Poppins', sans-serif;
+            margin: 0;
+            padding: 0;
+            background: #f2f4f7;
+            color: #333;
+            overflow-x: hidden;
+        }
+
+        /* Header */
+        header {
+            text-align: center;
+            margin: 40px 0;
+            padding: 20px;
+        }
+
+        h1 {
+            font-family: 'Playfair Display', serif;
+            font-size: 3.5rem;
+            color: #4f4a56;
+            margin: 0;
+            text-transform: uppercase;
+            letter-spacing: 1.5px;
+            text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+            animation: fadeIn 2s ease-in-out;
+        }
+
+        h2 {
+            font-size: 1.6rem;
+            color: #6c757d;
+            margin-top: 15px;
+            font-weight: 400;
+            letter-spacing: 1px;
+        }
+
+        nav {
+            margin-top: 30px;
+            text-align: center;
+        }
+
+        nav a {
+            font-size: 1.2rem;
+            color: #4f4a56;
+            text-decoration: none;
+            margin: 0 20px;
+            padding: 10px;
+            font-weight: 600;
+            text-transform: uppercase;
+            border-radius: 30px;
+            transition: all 0.3s ease;
+        }
+
+        nav a:hover {
+            background-color: #e9ecef;
+            color: #2b2d42;
+        }
+
+        /* Poem Section */
+        .book-container {
+            max-width: 960px;
+            margin: 50px auto;
+            background-color: #ffffff;
+            border-radius: 15px;
+            box-shadow: 0 12px 30px rgba(0, 0, 0, 0.1);
+            padding: 40px;
+            display: none;
+            animation: fadeInUp 2s ease-out;
+        }
+
+        .active {
+            display: block;
+        }
+
+        .poem-card {
+            margin-bottom: 30px;
+            padding: 25px;
+            background-color: #f8f9fa;
+            border-radius: 10px;
+            box-shadow: 0 6px 20px rgba(0, 0, 0, 0.08);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .poem-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+        }
+
+        .poem-card h3 {
+            font-family: 'Playfair Display', serif;
+            font-size: 1.5rem;
+            margin-bottom: 15px;
+            color: #4f4a56;
+            letter-spacing: 0.5px;
+        }
+
+        .poem-card p {
+            font-size: 1.2rem;
+            line-height: 1.6;
+            color: #555;
+            text-align: justify;
+            margin-bottom: 20px;
+        }
+
+        .heart-icon {
+            position: absolute;
+            top: 15px;
+            right: 15px;
+            color: #e74c3c;
+            font-size: 1.5rem;
+            cursor: pointer;
+            transition: transform 0.3s ease-in-out;
+        }
+
+        .heart-icon:hover {
+            transform: scale(1.2);
+        }
+
+        /* Footer */
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #2b2d42;
+            color: white;
+            margin-top: 60px;
+        }
+
+        .social-icons i {
+            font-size: 1.8rem;
+            color: #e9ecef;
+            margin: 0 15px;
+            transition: color 0.3s ease, transform 0.3s ease;
+        }
+
+        .social-icons i:hover {
+            color: #4f4a56;
+            transform: scale(1.2);
+        }
+
+        /* Animations */
+        @keyframes fadeIn {
+            0% { opacity: 0; transform: translateY(-20px); }
+            100% { opacity: 1; transform: translateY(0); }
+        }
+
+        @keyframes fadeInUp {
+            0% { opacity: 0; transform: translateY(30px); }
+            100% { opacity: 1; transform: translateY(0); }
+        }
+
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Segelintir Puisi tentang Anindya</h1>
+        <h2>Buku Puisi: Cinta untuk Anindya</h2>
+        <nav>
+            <a href="#" onclick="showPoems(1)"><i class="fas fa-book"></i> Puisi 1-10</a>
+            <a href="#" onclick="showPoems(2)"><i class="fas fa-book"></i> Puisi 11-20</a>
+            <a href="#" onclick="showPoems(3)"><i class="fas fa-book"></i> Puisi 21-30</a>
+        </nav>
+    </header>
+
+    <!-- Puisi 1-10 -->
+    <div class="book-container active" id="poems1">
+        <h2>Bagian 1: Puisi 1-10</h2>
+        <!-- Puisi 1 -->
+        <div class="poem-card">
+            <h3><i class="fas fa-sun"></i> Puisi 1: Cahayaku</h3>
+            <p>Dalam senyummu, ku temukan cahaya,<br>
+               Menyinari gelap, menuntunku pulang.<br>
+               Kau bagai rembulan di malam sepi,<br>
+               Setiap detik bersamamu, adalah harmoni.</p>
+            <i class="fas fa-heart heart-icon"></i>
+        </div>
+        <!-- Puisi 2 -->
+        <div class="poem-card">
+            <h3><i class="fas fa-water"></i> Puisi 2: Ombak dan Laut</h3>
+            <p>Kau ombak yang tenang di lautan hatiku,<br>
+               Menghapus segala gelombang kesedihan.<br>
+               Setiap tatapanmu, membawaku jauh,<br>
+               Ke tempat di mana cinta takkan padam.</p>
+            <i class="fas fa-heart heart-icon"></i>
+        </div>
+        <!-- Puisi 3 -->
+        <div class="poem-card">
+            <h3><i class="fas fa-star"></i> Puisi 3: Rindu</h3>
+            <p>Rindu ini seperti bintang di langit,<br>
+               Tak terhitung, tak terdefinisi.<br>
+               Ku tunggu setiap detik bertemu,<br>
+               Seperti pagi menunggu sinar mentari.</p>
+            <i class="fas fa-heart heart-icon"></i>
+        </div>
+        <!-- Puisi 4 -->
+        <div class="poem-card">
+            <h3><i class="fas fa-moon"></i> Puisi 4: Kesempurnaan</h3>
+            <p>Di matamu, ku lihat sejuta cerita,<br>
+               Keindahan yang takkan pernah pudar.<br>
+               Setiap kata yang kau ucapkan,<br>
+               Mengalun lembut dalam jiwaku, tak terlupakan.</p>
+            <i class="fas fa-heart heart-icon"></i>
+        </div>
+        <!-- Puisi 5 -->
+        <div class="poem-card">
+            <h3><i class="fas fa-cloud"></i> Puisi 5: Mimpiku</h3>
+            <p>Setiap mimpi, kau adalah bintang,<br>
+               Penuntunku di malam kelam.<br>
+               Dalam setiap tidur, ku terbang ke tempatmu,<br>
+               Di sana, hanya ada kita berdua.</p>
+            <i class="fas fa-heart heart-icon"></i>
+        </div>
+        <!-- Puisi 6 -->
+        <div class="poem-card">
+            <h3><i class="fas fa-leaf"></i> Puisi 6: Embun Pagi</h3>
+            <p>Pada fajar yang baru terbit,<br>
+               Ku temukan jejakmu di setiap langkah.<br>
+               Seperti embun yang menyejukkan,<br>
+               Namamu tersemat harapan.</p>
+            <i class="fas fa-heart heart-icon"></i>
+        </div>
+        <!-- Puisi 7 -->
+        <div class="poem-card">
+            <h3><i class="fas fa-leaf"></i> Puisi 7: Cinta yang Menyegarkan</h3>
+            <p>Hujan membasahi bumi yang kering,<br>
+               Seperti kasihmu, selalu menyejukkan hati,<br>
+               Anindya, bintang di malam sunyi,<br>
+               Cahayamu menerangi setiap langkahku.</p>
+            <i class="fas fa-heart heart-icon"></i>
+        </div>
+        <!-- Puisi 8 -->
+        <div class="poem-card">
+            <h3><i class="fas fa-heartbeat"></i> Puisi 8: Dalam Setiap Detak</h3>
+            <p>Dalam setiap langkah, kau temani,<br>
+               Menyusuri jalan penuh mimpi,<br>
+               Anindya, selamanya kau di hati,<br>
+               Dalam puisi, kau abadi.</p>
+            <i class="fas fa-heart heart-icon"></i>
+        </div>
+        <!-- Puisi 9 -->
+        <div class="poem-card">
+            <h3><i class="fas fa-wind"></i> Puisi 9: Bisikan Angin</h3>
+            <p>Angin berbisik lembut namamu,<br>
+               Di antara dedaunan yang menari,<br>
+               Anindya, kau adalah lagu,<br>
+               Yang terlantun dalam jiwa ini.</p>
+            <i class="fas fa-heart heart-icon"></i>
+        </div>
+        <!-- Puisi 10 -->
+        <div class="poem-card">
+            <h3><i class="fas fa-sunset"></i> Puisi 10: Senja yang Indah</h3>
+            <p>Senja datang dengan warna merah,<br>
+               Seperti cinta yang takkan pudar,<br>
+               Anindya, kau adalah cahaya,<br>
+               Dalam gelap, kau sinar yang nyata.</p>
+            <i class="fas fa-heart heart-icon"></i>
+        </div>
+    </div>
+
+    <!-- Puisi 11-20 -->
+    <div class="book-container" id="poems2">
+        <h2>Bagian 2: Puisi 11-20</h2>
+        <!-- Puisi 11 -->
+        <div class="poem-card">
+            <h3><i class="fas fa-sun"></i> Puisi 11: Cahaya yang Menyala</h3>
+            <p>Kau adalah matahari dalam hidupku,<br>
+               Menyinariku, bahkan dalam kegelapan.<br>
+               Anindya, di bawah langit yang sama,<br>
+               Aku terus berharap bisa memilikimu selamanya.</p>
+            <i class="fas fa-heart heart-icon"></i>
+        </div>
+
+        <!-- Puisi 12 -->
+        <div class="poem-card">
+            <h3><i class="fas fa-leaf"></i> Puisi 12: Hujan di Senja</h3>
+            <p>Hujan di senja, meresap dalam hatiku,<br>
+               Mungkin cinta kita bisa seperti ini,<br>
+               Menyejukkan dan menghangatkan,<br>
+               Berada di antara dua dunia yang berbeda.</p>
+            <i class="fas fa-heart heart-icon"></i>
+        </div>
+
+        <!-- Puisi 13 -->
+        <div class="poem-card">
+            <h3><i class="fas fa-tree"></i> Puisi 13: Dalam Rinduku</h3>
+            <p>Di bawah pohon yang rindang ini,<br>
+               Aku menulis puisi tentangmu,<br>
+               Dalam angin yang lembut,<br>
+               Nama mu bergema dalam hatiku.</p>
+            <i class="fas fa-heart heart-icon"></i>
+        </div>
+
+        <!-- Puisi 14 -->
+        <div class="poem-card">
+            <h3><i class="fas fa-sun"></i> Puisi 14: Keabadian</h3>
+            <p>Tak ada yang lebih indah dari kebersamaan,<br>
+               Seperti matahari yang tak pernah lelah<br>
+               Bersinar untuk kita,<br>
+               Selamanya akan ada cinta di antara kita.</p>
+            <i class="fas fa-heart heart-icon"></i>
+        </div>
+
+        <!-- Puisi 15 -->
+        <div class="poem-card">
+            <h3><i class="fas fa-butterfly"></i> Puisi 15: Terbang Bersama</h3>
+            <p>Seperti kupu-kupu yang terbang bebas,<br>
+               Cinta kita bebas tanpa batas,<br>
+               Terbang bersama hingga ke ujung dunia,<br>
+               Di sana, hanya ada kita dan langit.</p>
+            <i class="fas fa-heart heart-icon"></i>
+        </div>
+
+        <!-- Puisi 16 -->
+        <div class="poem-card">
+            <h3><i class="fas fa-paint-brush"></i> Puisi 16: Lukisan Hatiku</h3>
+            <p>Hatiku adalah kanvas kosong,<br>
+               Kau datang dengan warna cinta,<br>
+               Melukis setiap sudut kehidupanku,<br>
+               Dengan palet kebahagiaan yang indah.</p>
+            <i class="fas fa-heart heart-icon"></i>
+        </div>
+
+        <!-- Puisi 17 -->
+        <div class="poem-card">
+            <h3><i class="fas fa-gem"></i> Puisi 17: Berlian di Hatiku</h3>
+            <p>Kau adalah berlian yang berkilau,<br>
+               Menyinari hidupku yang penuh goresan.<br>
+               Dalam hatiku, kau adalah harta yang paling berharga,<br>
+               Tidak ada yang lebih berharga dari cintamu.</p>
+            <i class="fas fa-heart heart-icon"></i>
+        </div>
+
+        <!-- Puisi 18 -->
+        <div class="poem-card">
+            <h3><i class="fas fa-cloud"></i> Puisi 18: Awan yang Berjalan</h3>
+            <p>Seperti awan yang bergerak dengan angin,<br>
+               Cinta kita mengalir tanpa halangan.<br>
+               Tak terhalang ruang dan waktu,<br>
+               Kita akan selalu bersama, selamanya.</p>
+            <i class="fas fa-heart heart-icon"></i>
+        </div>
+
+        <!-- Puisi 19 -->
+        <div class="poem-card">
+            <h3><i class="fas fa-shooting-star"></i> Puisi 19: Harapan</h3>
+            <p>Setiap bintang di langit adalah harapan,<br>
+               Harapan yang terkubur dalam jiwaku,<br>
+               Aku memohon pada bintang itu,<br>
+               Agar kita selalu bersama di setiap waktu.</p>
+            <i class="fas fa-heart heart-icon"></i>
+        </div>
+
+        <!-- Puisi 20 -->
+        <div class="poem-card">
+            <h3><i class="fas fa-fire"></i> Puisi 20: Api Cinta</h3>
+            <p>Api cinta selalu menyala dalam hatiku,<br>
+               Tak pernah padam, tak pernah surut.<br>
+               Di dalam jiwaku, hanya ada cinta untukmu,<br>
+               Yang menghangatkan hatiku setiap waktu.</p>
+            <i class="fas fa-heart heart-icon"></i>
+        </div>
+    </div>
+
+    <!-- Puisi 21-30 -->
+    <div class="book-container" id="poems3">
+        <h2>Bagian 3: Puisi 21-30</h2>
+        <!-- Puisi 21 -->
+        <div class="poem-card">
+            <h3><i class="fas fa-lightbulb"></i> Puisi 21: Penerang Gelap</h3>
+            <p>Kau adalah cahaya yang menerangi malamku,<br>
+               Menembus setiap kegelapan yang ada.<br>
+               Tanpamu, dunia ini akan terasa sunyi,<br>
+               Seperti malam tanpa bintang.</p>
+            <i class="fas fa-heart heart-icon"></i>
+        </div>
+
+        <!-- Puisi 22 -->
+        <div class="poem-card">
+            <h3><i class="fas fa-umbrella"></i> Puisi 22: Hujan dan Cinta</h3>
+            <p>Di bawah hujan, aku merasakan hangatnya cinta,<br>
+               Seperti kau yang selalu menemani.<br>
+               Setiap tetes hujan adalah pesan,<br>
+               Bahwa kita akan selalu bersama.</p>
+            <i class="fas fa-heart heart-icon"></i>
+        </div>
+
+        <!-- Puisi 23 -->
+        <div class="poem-card">
+            <h3><i class="fas fa-mountain"></i> Puisi 23: Mendaki Bersama</h3>
+            <p>Kita akan mendaki puncak bersama,<br>
+               Menapaki setiap tantangan yang datang.<br>
+               Di puncak itu, kita akan melihat dunia,<br>
+               Dan di sanalah cinta kita akan bertumbuh.</p>
+            <i class="fas fa-heart heart-icon"></i>
+        </div>
+
+        <!-- Puisi 24 -->
+        <div class="poem-card">
+            <h3><i class="fas fa-palette"></i> Puisi 24: Warna Cinta</h3>
+            <p>Setiap warna adalah rasa hati,<br>
+               Dan kau adalah warna terindah dalam hidupku.<br>
+               Tanpamu, dunia ini akan terasa putih,<br>
+               Karena hanya denganmu, semua menjadi lebih indah.</p>
+            <i class="fas fa-heart heart-icon"></i>
+        </div>
+
+        <!-- Puisi 25 -->
+        <div class="poem-card">
+            <h3><i class="fas fa-cloud"></i> Puisi 25: Awan yang Mewakili</h3>
+            <p>Awan itu melambangkan perasaan kita,<br>
+               Yang terus bergerak, tak terhalang waktu.<br>
+               Cinta kita selalu mengalir,<br>
+               Seperti awan yang membawa ketenangan.</p>
+            <i class="fas fa-heart heart-icon"></i>
+        </div>
+
+        <!-- Puisi 26 -->
+        <div class="poem-card">
+            <h3><i class="fas fa-key"></i> Puisi 26: Kunci Hati</h3>
+            <p>Denganmu, aku menemukan kunci hatiku,<br>
+               Dan hanya kau yang bisa membuka,<br>
+               Setiap ruang yang terkunci,<br>
+               Hanya untuk cinta yang abadi.</p>
+            <i class="fas fa-heart heart-icon"></i>
+        </div>
+
+        <!-- Puisi 27 -->
+        <div class="poem-card">
+            <h3><i class="fas fa-rocket"></i> Puisi 27: Terbang Ke Langit</h3>
+            <p>Denganmu, aku merasa seperti burung,<br>
+               Terbang bebas mengarungi langit biru.<br>
+               Di antara bintang dan awan,<br>
+               Cinta kita tak terhalang ruang dan waktu.</p>
+            <i class="fas fa-heart heart-icon"></i>
+        </div>
+
+        <!-- Puisi 28 -->
+        <div class="poem-card">
+            <h3><i class="fas fa-book-open"></i> Puisi 28: Buku Cinta</h3>
+            <p>Kita menulis kisah cinta kita sendiri,<br>
+               Setiap bab adalah kenangan,<br>
+               Dengan tinta cinta, kita menulis,<br>
+               Sebuah kisah yang tak pernah pudar.</p>
+            <i class="fas fa-heart heart-icon"></i>
+        </div>
+
+        <!-- Puisi 29 -->
+        <div class="poem-card">
+            <h3><i class="fas fa-thumbs-up"></i> Puisi 29: Cinta yang Tulus</h3>
+            <p>Cinta ini adalah cinta yang tulus,<br>
+               Tak ada kepalsuan di dalamnya.<br>
+               Denganmu, aku merasa utuh,<br>
+               Seperti dua hati yang saling menyatu.</p>
+            <i class="fas fa-heart heart-icon"></i>
+        </div>
+
+        <!-- Puisi 30 -->
+        <div class="poem-card">
+            <h3><i class="fas fa-sun"></i> Puisi 30: Seperti Matahari</h3>
+            <p>Kau adalah matahari dalam hidupku,<br>
+               Yang tak pernah terbenam,<br>
+               Cinta kita akan selalu bersinar,<br>
+               Menyinari dunia dengan cahaya yang indah.</p>
+            <i class="fas fa-heart heart-icon"></i>
+        </div>
+    </div>
+
+    <footer>
+        <p>© 2024 Puisi untuk Anindya. Dibuat dengan cinta ❤️</p>
+        <div class="social-icons">
+            <a href="#"><i class="fab fa-facebook"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+        </div>
+    </footer>
+
+    <script>
+        function showPoems(part) {
+            // Hiding all sections
+            document.querySelector('#poems1').classList.remove('active');
+            document.querySelector('#poems2').classList.remove('active');
+            document.querySelector('#poems3').classList.remove('active');
+            
+            // Display the clicked section
+            if (part === 1) document.querySelector('#poems1').classList.add('active');
+            if (part === 2) document.querySelector('#poems2').classList.add('active');
+            if (part === 3) document.querySelector('#poems3').classList.add('active');
+        }
+    </script>
+</body>
+</html>
